@@ -1,0 +1,63 @@
+bufferSize: 2048
+pages:
+- {content: Welcome to the listening test., id: first page, name: welcome, type: generic}
+- content: ''
+  createAnchor35: false
+  createAnchor70: false
+  enableLooping: false
+  id: 00-ground-truth:LJ050-0030
+  name: 1/4:LJ050-0030
+  reference: ./configs/resources/00-subjective-test/00-ground-truth/LJ050-0030.wav
+  showConditionNames: false
+  showWaveform: true
+  stimuli: {'00-ground-truth:LJ050-0030': ./configs/resources/00-subjective-test/00-ground-truth/LJ050-0030.wav}
+  strict: false
+  type: mushra
+- content: ''
+  createAnchor35: false
+  createAnchor70: false
+  enableLooping: false
+  id: 01-taco2:LJ050-0029
+  name: 2/4:LJ050-0029
+  reference: ./configs/resources/00-subjective-test/01-taco2/LJ050-0029.wav
+  showConditionNames: false
+  showWaveform: true
+  stimuli: {'01-taco2:LJ050-0029': ./configs/resources/00-subjective-test/01-taco2/LJ050-0029.wav}
+  strict: false
+  type: mushra
+- content: ''
+  createAnchor35: false
+  createAnchor70: false
+  enableLooping: false
+  id: 00-ground-truth:LJ050-0029
+  name: 3/4:LJ050-0029
+  reference: ./configs/resources/00-subjective-test/00-ground-truth/LJ050-0029.wav
+  showConditionNames: false
+  showWaveform: true
+  stimuli: {'00-ground-truth:LJ050-0029': ./configs/resources/00-subjective-test/00-ground-truth/LJ050-0029.wav}
+  strict: false
+  type: mushra
+- content: ''
+  createAnchor35: false
+  createAnchor70: false
+  enableLooping: false
+  id: 01-taco2:LJ050-0030
+  name: 4/4:LJ050-0030
+  reference: ./configs/resources/00-subjective-test/01-taco2/LJ050-0030.wav
+  showConditionNames: false
+  showWaveform: true
+  stimuli: {'01-taco2:LJ050-0030': ./configs/resources/00-subjective-test/01-taco2/LJ050-0030.wav}
+  strict: false
+  type: mushra
+- content: Thank you for attending!
+  name: Thank you
+  questionnaire:
+  - {label: email, name: email, type: text}
+  showResults: false
+  type: finish
+  writeResults: true
+remoteService: service/write.php
+showButtonPreviousPage: true
+stopOnErrors: true
+testId: espnet_tts_mos
+testname: MOS evaluation
